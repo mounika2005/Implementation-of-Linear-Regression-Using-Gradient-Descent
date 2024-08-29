@@ -8,18 +8,14 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-Step-1:Start
-
-Step-2:Intialize weights randomly.
-
-Step-3:Compute predicted.
-
-Step-4:Compute gradient of loss function.
-
-Step-5:Update weights using gradient descent.
-
-Step-6:End
-
+```
+Step-1: Start
+Step-2: Intialize weights randomly. 
+Step-3: Compute predicted. 
+Step-4: Compute gradient of loss function.
+Step-5: Update weights using gradient descent.
+Step-6: End
+```
 ## Program:
 ```
 /*
@@ -27,7 +23,6 @@ Program to implement the linear regression using gradient descent.
 Developed by: levaku lakshmi mounika
 RegisterNumber: 212223100026
 */
-
 
 import numpy as np
 import pandas as pd
@@ -46,6 +41,7 @@ def linear_regression(X1,y,learning_rate=0.1,num_iters=1000):
 
 data=pd.read_csv("C:/Users/admin/Desktop/50_Startups.csv",header=None)
 data.head()
+
 X=(data.iloc[1:,:-2].values) 
 X1=X.astype(float)
 
@@ -59,10 +55,11 @@ Y1_Scaled=scaler.fit_transform(y)
 print(X)
 
 print(X1_Scaled)
+
 ```
 
-## Output:
 
+## Output:
 ![Screenshot 2024-08-29 171800](https://github.com/user-attachments/assets/de3a1564-3fbc-422e-b19e-a11b9b2da036)
 
 ![Screenshot 2024-08-29 171947](https://github.com/user-attachments/assets/5f10d1e0-1391-444a-82ec-82142ffe92ae)
@@ -71,6 +68,6 @@ print(X1_Scaled)
 
 ![Screenshot 2024-08-29 172041](https://github.com/user-attachments/assets/a80ff115-6575-403a-9281-2b1ba6442a4b)
 
-
 ## Result:
+
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
